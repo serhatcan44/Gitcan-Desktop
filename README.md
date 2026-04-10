@@ -1,108 +1,175 @@
-🚀 GitCan Desktop
-<p align="center"> <img src="./banner_gitcan_final.svg" width="100%" /> </p> <p align="center"> <b>Modern, hızlı ve geliştirici dostu GitHub masaüstü yöneticisi</b> </p>
-🧠 Overview
+# 🚀 GitCan Desktop
 
-GitCan Desktop, GitHub ile etkileşimi tamamen görselleştiren, modern bir masaüstü uygulamasıdır.
+<p align="center">
+  <img src="./banner_gitcan_final.svg" width="100%" alt="GitCan Banner" />
+</p>
+
+<p align="center">
+  <b>Modern, hızlı ve geliştirici dostu GitHub masaüstü yöneticisi</b>
+</p>
+
+<p align="center">
+  GitHub repolarını görsel, sade ve güçlü bir masaüstü deneyimiyle yönetmek için geliştirildi.
+</p>
+
+---
+
+## 🧠 Overview
+
+**GitCan Desktop**, GitHub ile etkileşimi tamamen görselleştiren modern bir masaüstü uygulamasıdır.  
 Tauri + React mimarisiyle geliştirilmiş olup performans, sadelik ve gerçek kullanım senaryoları odağa alınmıştır.
 
-CLI kullanımını minimuma indirir ve kullanıcıya:
+CLI kullanımını minimuma indirir ve kullanıcıya tek bir arayüz üzerinden:
 
-Repo oluşturma
-Dosya yükleme
-Repo içeriği görüntüleme
-GitHub auth yönetimi
+- Repository oluşturma
+- Repository listeleme
+- Repository güncelleme ve silme
+- Dosya ve klasör yükleme
+- Repository içeriğini görüntüleme
+- GitHub hesabı ile güvenli giriş
 
-gibi işlemleri tek bir arayüzden yapma imkanı sunar.
+deneyimi sunar.
 
-⚡ Core Features
-🔐 GitHub Authentication (Device Flow)
-GitHub OAuth Device Flow ile giriş
-Güvenli token yönetimi
-Local store üzerinde saklama
-Tam API tabanlı iletişim
-📦 Repository Management
-Repo oluşturma (Public / Private)
-Repo güncelleme & silme
-Kullanıcıya ait repo listeleme
-Default branch yönetimi
-📁 File & Folder Operations
-Local dosya/kalsör seçimi
-Recursive kopyalama
-Otomatik .gitkeep oluşturma
-Güvenli fallback copy sistemi
-📂 Explorer System (UI)
-Repo içeriğini ağaç yapısında görüntüleme
-Klasör navigasyonu
-Dosya önizleme (text / html)
-Modal tabanlı explorer UI
-🚀 Push & Upload Pipeline
-Adım adım progress sistemi
-Gerçek zamanlı event tabanlı loglar
-Yüzdelik ilerleme takibi
-Hata yakalama ve raporlama
-🖥️ Native Desktop Power (Tauri)
-Rust backend ile yüksek performans
-Shell komutları çalıştırabilme
-Sistem dialog erişimi
-Window kontrol yetkileri
-🎨 Modern UI / UX
-Tam karanlık tema
-Minimal ve sade tasarım
-Splash screen + loading progress sistemi
-Custom alert event sistemi
-🧩 Architecture
+---
 
-GitCan Desktop, hybrid modern architecture kullanır:
+## ⚡ Core Features
 
-Frontend
-React (Vite)
-Component-based yapı
-State-driven UI
-Event listeners (Tauri bridge)
+### 🔐 GitHub Authentication
+- GitHub Device Flow ile giriş
+- Güvenli token yönetimi
+- Yerel oturum saklama
+- Hızlı ve sade kimlik doğrulama akışı
 
-→ Entry point:
+### 📦 Repository Management
+- Public / Private repository oluşturma
+- Kullanıcı repolarını listeleme
+- Repository bilgilerini güncelleme
+- Repository silme işlemleri
+- Varsayılan branch bilgisini yönetme
 
+### 📁 File & Folder Operations
+- Bilgisayardan dosya veya klasör seçme
+- Recursive klasör kopyalama
+- Boş klasörler için otomatik `.gitkeep` oluşturma
+- Güvenli fallback kopyalama sistemi
 
-Backend
-Rust (Tauri)
-File system operations
-GitHub API proxy işlemleri
-Stream & async işlemler (tokio)
-Communication Layer
-invoke() ile frontend → backend çağrıları
-Event emitter ile progress & log aktarımı
-🔐 Security & Permissions
-Capability-based permission sistemi
-Scoped erişim (shell, dialog, store)
-Window bazlı yetkilendirme
-🎯 Design Philosophy
+### 📂 Explorer Experience
+- Repository içeriğini görüntüleme
+- Klasörler arasında gezinme
+- Dosya önizleme desteği
+- Text ve HTML içeriklerini inceleme
+- Modal tabanlı modern explorer yapısı
 
-GitCan şu prensiplerle geliştirildi:
+### 🚀 Upload & Progress Tracking
+- Adım adım ilerleme takibi
+- Gerçek zamanlı progress bilgisi
+- Yüzdelik durum göstergesi
+- Log tabanlı işlem akışı
+- Hata durumlarını kullanıcıya gösterme
 
-Zero friction UX → Kullanıcı düşünmeden kullanmalı
-Native performance → Electron yerine Tauri
-Visual-first Git → CLI yerine arayüz
-Modular yapı → kolay genişletilebilir
-🔥 Unique Highlights
-⚡ Tauri + React hibrit yapı (performans + UI dengesi)
-🔐 Device Flow auth (advanced GitHub integration)
-📂 Gerçek file system sync (sadece API değil)
-📊 Live progress system (event-driven)
-🧠 Clean architecture (frontend / backend ayrımı net)
-🚧 Future Plans
- Commit / Push granular control
- Branch management
- Drag & Drop upload
- Multi-account support
- Repo diff viewer
- Offline caching
-👨‍💻 Developer
+### 🖥️ Native Desktop Experience
+- Tauri tabanlı hafif ve hızlı yapı
+- Native pencere kontrolü
+- Sistem dialog entegrasyonu
+- Yerel dosya sistemi ile güçlü etkileşim
 
-Serhat Can
-📍 Samsun
-🔗 https://github.com/serhatcan44
+### 🎨 Modern UI / UX
+- Koyu tema odaklı modern tasarım
+- Minimal ve temiz arayüz
+- Splash screen deneyimi
+- Özel alert sistemi
+- Geliştirici dostu akışlar
 
-⭐ Support
+---
 
-Projeyi beğendiysen ⭐ bırakmayı unutma.
-Bu proje aktif olarak geliştirilmektedir.
+## 🧩 Architecture
+
+### Frontend
+- React
+- Vite
+- TypeScript
+- Component-based UI yapısı
+- Event-driven kullanıcı akışı
+
+### Backend
+- Rust
+- Tauri
+- Async işlemler
+- Native file system operasyonları
+- GitHub API ile güçlü entegrasyon
+
+### Communication Layer
+- Frontend ve backend arasında `invoke()` tabanlı haberleşme
+- Event emitter ile canlı işlem durumu aktarımı
+- Native ve web katmanı arasında temiz köprü yapısı
+
+---
+
+## 🔐 Security & Permissions
+
+GitCan Desktop, masaüstü uygulamalar için daha kontrollü ve güvenli bir yaklaşım benimser.
+
+- Capability tabanlı izin yapısı
+- Store erişim yönetimi
+- Shell yetkileri
+- Dialog izinleri
+- Window kontrolleri için tanımlı permission sistemi
+
+Bu yapı sayesinde uygulama hem güçlü masaüstü yetenekleri sunar hem de erişimleri kontrollü tutar.
+
+---
+
+## 🎯 Design Philosophy
+
+GitCan şu temel prensiplerle geliştirildi:
+
+- **Zero friction UX**  
+  Kullanıcı mümkün olduğunca az teknik bariyerle işlem yapabilmeli.
+
+- **Native performance**  
+  Hafif, hızlı ve masaüstüne uygun bir deneyim sunulmalı.
+
+- **Visual-first Git workflow**  
+  Komut satırı zorunluluğu olmadan GitHub işlemleri yapılabilmeli.
+
+- **Modular structure**  
+  Uygulama gelecekte yeni özelliklerle kolayca genişletilebilmeli.
+
+---
+
+## 🔥 Highlights
+
+- Tauri + React hibrit mimari
+- GitHub Device Flow entegrasyonu
+- Repository yönetimi için sade masaüstü deneyimi
+- Dosya ve klasör bazlı içerik yükleme akışı
+- Gerçek zamanlı progress sistemi
+- Explorer ve preview tabanlı içerik görüntüleme
+- Modern koyu tema arayüzü
+
+---
+
+## 🚧 Roadmap
+
+- [ ] Branch management
+- [ ] Commit / Push control
+- [ ] Drag & Drop upload
+- [ ] Multi-account support
+- [ ] Diff viewer
+- [ ] Offline cache support
+
+---
+
+## 👨‍💻 Developer
+
+**Serhat Can**  
+📍 Samsun, Türkiye  
+🔗 GitHub: [serhatcan44](https://github.com/serhatcan44)
+
+---
+
+## ⭐ Support
+
+Projeyi beğendiysen repo'ya yıldız vermeyi unutma.
+
+GitCan Desktop aktif olarak geliştirilmektedir.
