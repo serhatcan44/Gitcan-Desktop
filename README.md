@@ -1,7 +1,7 @@
 # 🚀 GitCan Desktop
 
 <p align="center">
-  <img src="./banner_gitcan_final.svg" width="100%" alt="GitCan Banner" />
+  <img src="./bangit.svg" width="100%" alt="GitCan Banner" />
 </p>
 
 <p align="center">
